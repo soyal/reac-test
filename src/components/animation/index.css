@@ -1,0 +1,25 @@
+ html, body {
+   width: 100%;
+   overflow: hidden;
+ }
+ .test-enter, .test-appear{
+   transform: translateX(-200px);
+   opacity: 0.01;
+ }
+ .test-enter.test-enter-active, .test-appear.test-appear-active {
+   transform: translateX(0);
+   opacity: 1;
+   transition: all 500ms ease-in-out;
+ }
+ .test-leave {
+   transform: translateX(0);
+   opacity: 1;
+ }
+ .test-leave.test-leave-active {
+   transition: all 500ms ease-in;
+   opacity: 0;
+   transform: translateX(300px);
+ }
+ .item {
+   position: absolute;
+ }
