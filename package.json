@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fs/babel-plugin-import": "^1.0.0",
+    "@fs/cc-ui": "^1.0.0",
     "@fs/fs-editor": "^1.0.8",
     "draft-js": "^0.10.1",
     "halogen": "^0.2.0",
@@ -99,7 +101,11 @@
       "react-app"
     ],
     "plugins": [
-      "transform-decorators-legacy"
+      "transform-decorators-legacy",
+      ["@fs/babel-plugin-import", {
+        "libraryName": "@fs/cc-ui",
+        "style": "css" 
+      }]
     ]
   },
   "eslintConfig": {
