@@ -8,6 +8,7 @@ class PullToRefresh extends React.Component {
     componentDidMount() {
         const refresh = new window.MiniRefresh({
             container: '#minirefresh',
+            isUseBodyScroll: true,
             down: {
                 callback: function () {
                     setTimeout(() => {
@@ -35,6 +36,15 @@ class PullToRefresh extends React.Component {
                     <div id="minirefresh" className="minirefresh-wrap">
                         <div className="minirefresh-scroll">
                             <div className="list">
+                                <p>11111111111111111111</p>
+                                <p>11111111111111111111</p>
+                                <p>11111111111111111111</p>
+                                <p>11111111111111111111</p>
+                                <p>11111111111111111111</p>
+                                <p>11111111111111111111</p>
+                                <p>11111111111111111111</p>
+                                <p>11111111111111111111</p>
+                                <p>11111111111111111111</p>
                                 <p>11111111111111111111</p>
                                 <p>11111111111111111111</p>
                                 <p>11111111111111111111</p>
