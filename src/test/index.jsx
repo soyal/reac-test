@@ -1,46 +1,29 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
 
-class Test extends React.Component {
-  state = {
-    a: 1
-  }
-
-  componentDidMount() {
-    this.setState({
-      a: 2
-    })
-    console.log('t1', this.state.a)
-
-    this.setState({
-      a: 3
-    })
-    console.log('t2', this.state.a)
-
-    setTimeout(() => {
-      this.setState({
-        a:4
-      })
-
-      console.log('t3', this.state.a)
-
-      this.setState({
-        a: 5
-      })
-      console.log('t4', this.state.a)
-    })
-  }
-
+class RouterTest extends Component {
   render() {
     return (
-      <div>
-        <span>
-          thisis a span tag
-        </span>'
-        <div></div>
-        <p>1111111111111111111</p>
-      </div>
+      <Router>
+        <div>
+          <div>
+            <Link to="/test/a">to test a</Link>
+            <br />
+            <Link to="/test/b">to test b</Link>
+          </div>
+          <div>
+            <Route
+              path="/test/a"
+              children={({ match }) => {
+                debugger
+                return <div>is match: {match}</div>
+              }}
+            />
+          </div>
+        </div>
+      </Router>
     )
   }
 }
 
-export default Test
+export default RouterTest

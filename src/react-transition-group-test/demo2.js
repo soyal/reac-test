@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import TransitionGroup from 'react-transition-group/TransitionGroup'
 import Transition from 'react-transition-group/Transition'
 
 class Demo2 extends Component {
