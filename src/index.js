@@ -1,6 +1,5 @@
 import React from 'react'
 import { render } from 'react-dom'
-
 import Test from './portal'
 
 render(
@@ -8,4 +7,5 @@ render(
   document.querySelector('#root')
 )
 
+render(<Test></Test>, document.querySelector('#root'))
 
