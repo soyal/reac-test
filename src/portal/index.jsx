@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Portal from './portal'
+import Modal from './modal'
 
 import './index.less'
 
@@ -17,11 +17,7 @@ class PortalDemo extends Component {
           })
         }}>show</button>
 
-        {this.state.show ? (
-          <Portal>
-            <div className="portal-child">111</div>
-          </Portal>
-        ): null}
+        <Modal show={this.state.show}></Modal>
       </div>
     )
   }

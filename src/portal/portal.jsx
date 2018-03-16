@@ -1,18 +1,7 @@
 import { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-const root = document.querySelector('#root')
-
 class Portal extends Component {
-  constructor() {
-    super()
-
-    this.ctn = document.createElement('div')
-  }
-
-  componentDidMount() {
-    root.appendChild(this.ctn)
-  }
 
   componentWillUnmount() {
     
@@ -20,7 +9,7 @@ class Portal extends Component {
 
   render() {
     const { children } = this.props
-    return ReactDOM.createPortal(children, this.ctn)
+    return ReactDOM.createPortal(children, document.querySelector('#root'))
   }
 }
 

@@ -6,6 +6,7 @@
     "@fs/babel-plugin-import": "^1.0.0",
     "@fs/cc-ui": "^1.0.0",
     "@fs/fs-editor": "^1.0.8",
+    "animate.css": "^3.5.2",
     "draft-js": "^0.10.1",
     "halogen": "^0.2.0",
     "immutable": "^3.8.1",

@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-import Test from './react-transition-group-test'
+import Test from './portal'
 
 render(
   <Test></Test>,
